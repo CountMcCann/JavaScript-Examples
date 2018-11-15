@@ -1,0 +1,29 @@
+var johnW = prompt('What is Johns weight in kg?');
+
+var mahkW = prompt('what is Mahks weight in kg?');
+
+
+console.log(johnW, mahkW,);
+
+
+var johnH = prompt('What is Johns height meters?');
+
+var mahkH = prompt('what is Mahks height meters?');
+
+
+console.log(johnH, mahkH,);
+
+
+var johnBMI = johnW / (johnH * johnH);
+
+var mahkBMI = mahkW / (mahkH * mahkH);
+
+
+console.log('Johns BMI is ' + johnBMI );
+
+console.log('Mahks BMI is ' + mahkBMI );
+
+
+console.log('John has a higher BMI than Mahk' + ' ' + ( johnBMI >= mahkBMI ));
+
+console.log('Mahk has a higher BMI than John' + ' ' + ( mahkBMI >= johnBMI ));
