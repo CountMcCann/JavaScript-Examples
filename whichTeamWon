@@ -1,0 +1,80 @@
+var johnG1 = prompt('What What was the score of John\'s Game 1?');
+
+var johnG2 = prompt('What What was the score of John\'s Game 2?');
+
+var johnG3 = prompt('What What was the score of John\'s Game 3?');
+
+
+var mikeG1 = prompt('What What was the score of Mike\'s Game 1?');
+
+var mikeG2 = prompt('What What was the score of Mike\'s Game 2?');
+
+var mikeG3 = prompt('What What was the score of Mike\'s Game 3?');
+
+
+var maryG1 = prompt('What What was the score of Mary\'s Game 1?');
+
+var maryG2 = prompt('What What was the score of Mary\'s Game 2?');
+
+var maryG3 = prompt('What What was the score of Mary\'s Game 3?');
+
+
+
+var johnAverage = ((johnG1 + johnG2 + johnG3) /3);
+
+var mikeAverage = ((mikeG1 + mikeG2 + mikeG3) /3);
+
+var maryAverage = ((maryG1 + maryG2 + maryG3) /3);
+
+
+var johnTotal = (johnG1 + johnG2 + johnG3);
+
+var mikeTotal = (mikeG1 + mikeG2 + mikeG3);
+
+var maryTotal = (maryG1 + maryG2 + maryG3);
+
+
+console.log( johnAverage, mikeAverage, maryAverage);
+
+
+if (johnAverage > mikeAverage && johnAverage > maryAverage){
+
+console.log( 'John\'s Team Won by ' + johnTotal);
+
+}
+
+else if ( mikeAverage > maryAverage && mikeAverage > johnAverage){
+
+console.log( 'Mike\'s Team Won by ' + + mikeTotal);
+
+}
+
+else if (johnAverage === mikeAverage && johnAverage === maryAverage && mikeAverage === maryAverage){
+
+console.log( 'It was a tie with ' + mikeTotal + ' points!!!');
+
+}
+
+else if (johnAverage === mikeAverage && mikeAverage > maryAverage){
+
+console.log( 'It was a tie between Mike and John with ' + mikeTotal + ' points!!!');
+
+}
+
+else if (mikeAverage === maryAverage && mikeAverage > johnAverage){
+
+console.log( 'It was a tie between Mike and Mary with ' + mikeTotal + ' points!!!');
+
+}
+
+else if (johnAverage === maryAverage && maryAverage > mikeAverage){
+
+console.log( 'It was a tie between John and Mary with ' + johnTotal + ' points!!!');
+
+}
+
+else {
+
+console.log( 'Mary\'s team Won by ' + maryTotal);
+
+}
