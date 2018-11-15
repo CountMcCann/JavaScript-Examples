@@ -1,0 +1,71 @@
+var restPrice1 = 124;
+
+var restPrice2 = 48;
+
+var restPrice3 = 250;
+
+
+var tipPercent1 = 0.2;
+
+var tipPercent2 = 0.15;
+
+var tipPercent3 = 0.1;
+
+
+
+function tipCalculator(price){
+
+
+if (price <= 50){
+
+return(price * tipPercent1);
+
+
+}
+
+else if (price <= 200 && price >= 51){
+
+return(price * tipPercent2);
+
+}
+
+
+else {
+
+return(price * tipPercent3);
+
+}
+
+}
+
+
+var tip1 = tipCalculator(restPrice1);
+
+var tip2 = tipCalculator(restPrice2);
+
+var tip3 = tipCalculator(restPrice3);
+
+
+var totalTip =[tip1, tip2, tip3];
+
+console.log('Your tips are: ' +totalTip);
+
+
+
+function totalBill(tip, price){
+
+return (tip + price);
+
+}
+
+
+var bill1 = totalBill(tip1,restPrice1);
+
+var bill2 = totalBill(tip2,restPrice2);
+
+var bill3 = totalBill(tip3,restPrice3);
+
+
+var FullBill =[bill1, bill2, bill3];
+
+console.log('Your full bill including tips are: ' + FullBill);
